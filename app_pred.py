@@ -24,7 +24,7 @@ def load_models():
 if uploaded_file is not None:
     # Tampilkan gambar asli
     image = Image.open(uploaded_file).convert('RGB')
-    st.image(image, caption="Gambar yang Diupload", use_container_width=True)
+    st.image(image, caption="Gambar yang Diupload", use_column_width=True)
 
     # Load model
     yolov10, yolov11 = load_models()
@@ -45,10 +45,10 @@ if uploaded_file is not None:
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("YOLOv10")
-        st.image(result_img10, caption="Hasil Prediksi YOLOv10", use_container_width=True)
+        st.image(result_img10, caption="Hasil Prediksi YOLOv10", use_column_width=True)
     with col2:
         st.subheader("YOLOv11")
-        st.image(result_img11, caption="Hasil Prediksi YOLOv11", use_container_width=True)
+        st.image(result_img11, caption="Hasil Prediksi YOLOv11", use_column_width=True)
 
     # Hapus file sementara
     os.remove(image_path)
