@@ -1,0 +1,47 @@
+# .gitignore for a Python Project
+
+# --- Virtual Environments ---
+# Ignore the virtual environment folder
+venv/
+.venv/
+env/
+.env/
+venv.bak/
+
+# --- Python cache and compiled files ---
+# Ignore bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Distribution / packaging ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Environment variables ---
+# Ignore files that store sensitive information like API keys
+.env
+
+# --- IDE / Editor specific files ---
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# --- OS-specific files ---
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
