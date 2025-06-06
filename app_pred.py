@@ -1,9 +1,3 @@
-import streamlit as st
-from PIL import Image
-from ultralytics import YOLO
-import tempfile
-import os
-
 # Judul aplikasi
 st.title("Perbandingan Prediksi YOLOv10 vs YOLOv11")
 
